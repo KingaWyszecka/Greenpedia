@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl=PL">
+
+<head>
+    <title>Greenpedia</title>
+    <meta name="author" content="Kinga Wyszecka">
+    <link rel="stylesheet" href="Reset CSS.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="zbiory.css">
+    <link rel="Shortcut icon" href="ikona-strona.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $(".wyszukiwanie").click(function() {
+                $(".szukanie").slideDown("fast");
+
+            });
+        });
+        $(document).ready(function() {
+            $("main").click(function() {
+                $(".szukanie").slideUp("fast");
+
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <ol>
+                <li class="profil"><a href="strona_profil.html"><img src="ikona-profil.png" alt="logo" height="30px" width="30px"><br>Profil</a></li>
+                <li class="profil"><a href="strona_kolekcja.html"><img src="ikona-kolekcja.png" alt="logo" height="30px" width="30px"><br>Kolekcja</a></li>
+
+                <li class="glowna">
+                    <form action="?">
+                        <div class="wyszukiwanie">
+                            <input name="szukaj" type="text" class="szukaj" size="70px" placeholder="Lista obecnie dostępnych roślin">
+                            <input type="reset" class="reset" value=&#10006; height="20px">
+                        </div>
+                        <div class="szukanie suwak_pion">
+                            <a href="ziola.html #bazylia">Bazylia</a>
+                            <a href="kwiaty.html #bratek">Bratek</a>
+                            <a href="kwiaty.html #chryzantema">Chryzantema</a>
+                            <a href="kwiaty.html #bez">Dziki bez</a>
+                            <a href="kwiaty.html #hiacynt">Hiacynt</a>
+                            <a href="kwiaty.html #irys">Irys</a>
+                            <a href="kwiaty.html #lawenda">Lawenda</a>
+                            <a href="ziola.html #mieta">Mięta</a>
+                            <a href="ziola.html #paproc">Paproć</a>
+                            <a href="ziola.html #pokrzywa">Pokrzywa</a>
+                            <a href="kwiaty.html #roza">Róża</a>
+                            <a href="ziola.html #rumianek">Rumianek</a>
+                            <a href="kwiaty.html #stokrotka">Stokrotka</a>
+                            <a href="ziola.html #szalwia">Szałwia</a>
+                            <a href="kwiaty.html #tulipan">Tulipan</a>
+                        </div>
+                    </form>
+
+
+                </li>
+                <li class="mapa"><a href="kwiaty.html"><img src="ikona-kwiat.png" alt="kwiaty" height="30px" width="35px"><br>Kwiaty</a>
+                <li class="mapa"><a href="ziola.html"><img src="ikona-ziola.png" alt="ziola" height="30px" width="35px"><br>Zioła</a>
+                <li class="mapa"><a href="kontakt.html"><img src="ikona-mapa.png" alt="kontakt" height="30px" width="35px"><br>Kontakt</a>
+            </ol>
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <img src="ikona-kropki.png" class="dot2">
+            <img src="ikona-kropki.png" class="dot2">
+            <img src="ikona-kropki.png" class="dot2">
+            <abbr title="Powrót do strony głównej">
+                <a href="index.html">
+                    <img src="ikona-ziola.png" height="35%" width="35%" alt="logo">
+                </a>
+            </abbr>
+            <img src="ikona-kropki.png" class="dot2">
+            <img src="ikona-kropki.png" class="dot2">
+            <img src="ikona-kropki.png" class="dot2">
+        </div>
+        <nav class="ramki">
+            <div class="ramka">
+                <p class="naglowek" id="bazylia">Bazylia</p>
+                <img src="bazylia.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Pół. Afryka</p><br>
+                <p class="info"><span>Pora roku:</span></p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> lekko wilgotne podłoże
+                    <br>
+                    <img src="slonce.png" class="pogoda"> słonecznie, bezwietrzne
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br> Gleba: </span> żyzna, obojętne pH
+                    <br><span>Nawożenie</span>
+                </p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="mieta">Mięta</p>
+                <img src="mieta.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Pół. Afryka</p><br>
+                <p class="info"><span>Pora roku:</span> całoroczne, zabezpieczone na zimę</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> wilgotne podłoże
+                    <br>
+                    <img src="slonce.png" class="pogoda"> słoneczne i ciepłe miejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br> Gleba: </span>lekka, próchnicza, odchwaszczona starannie, zasadowe pH
+                    <br><span>Nawożenie</span>
+                </p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="paproc">Paproć</p>
+                <img src="paproc.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Pół. Afryka</p><br>
+                <p class="info"><span>Pora roku:</span> całoroczna</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> regularnie i umiarkowanie
+                    <br>
+                    <img src="slonce.png" class="pogoda"> bezwietrzne lekko zacienione miejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br> Nawożenie</span> raz na dwa tygodnie, w zimę wcale
+                </p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="pokrzywa">Pokrzywa</p>
+                <img src="pokrzywa.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Pół. Afryka</p><br>
+                <p class="info"><span>Pora roku:</span>wiosna/lato</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> lekko wilgotna ziemia
+                    <br>
+                    <img src="slonce.png" class="pogoda"> miejsce w półcieniu
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br> Gleba: </span>
+                    <br><span>Nawożenie</span>
+                </p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="rumianek">Rumianek</p>
+                <img src="rumianek.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Pół. Afryka</p><br>
+                <p class="info"><span>Pora roku:</span> początek czerwca</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> lekko wilgotna gleba
+                    <br>
+                    <img src="slonce.png" class="pogoda"> nasłonecznione miejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br> Gleba: </span>
+                    <br><span>Nawożenie</span>
+                </p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="szalwia">Szałwia</p>
+                <img src="szalwia.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Pół. Afryka</p><br>
+                <p class="info"><span>Pora roku:</span>lato</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> suche podłoże
+                    <br>
+                    <img src="slonce.png" class="pogoda"> nasłonecznione miejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br> Gleba: </span>
+                    <br><span>Nawożenie: </span>
+                </p>
+            </div>
+        </nav>
+        <p class="komentarz">Designed and built with all the love in the world by <a href="kontakt.html">me</a></p>
+    </main>
+    <footer>
+        Copyright &copy;
+    </footer>
+</body></html>

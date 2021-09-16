@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl=PL">
+
+<head>
+    <title>Greenpedia</title>
+    <meta name="author" content="Kinga Wyszecka">
+    <link rel="stylesheet" href="Reset CSS.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="Shortcut icon" href="ikona-strona.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("main").hover(function() {
+                $(".logo").animate({
+                    height: '35%',
+                    width: '35%',
+
+                });
+                $(".dot").animate({
+                    height: '4%',
+                    width: '5%',
+
+                });
+
+            });
+        });
+
+        $(document).ready(function() {
+            $(".wyszukiwanie").click(function() {
+                $(".szukanie").slideDown("fast");
+
+            });
+        });
+        $(document).ready(function() {
+            $("main").click(function() {
+                $(".szukanie").slideUp("fast");
+
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <ol>
+                <li class="profil"><a href="strona_profil.html"><img src="ikona-profil.png" alt="logo" height="30px" width="30px"><br>Profil</a></li>
+                <li class="profil"><a href="strona_kolekcja.html"><img src="ikona-kolekcja.png" alt="logo" height="30px" width="30px"><br>Kolekcja</a></li>
+
+                <li class="glowna">
+                    <form action="?">
+                        <div class="wyszukiwanie">
+                            <input name="szukaj" class="szukaj" size="70px" placeholder="Lista obecnie dostępnych roślin">
+                            <input type="reset" class="reset" value=&#10006; height="20px">
+                        </div>
+                        <div class="szukanie suwak_pion">
+                            <a href="ziola.html #bazylia">Bazylia</a>
+                            <a href="kwiaty.html #bratek">Bratek</a>
+                            <a href="kwiaty.html #chryzantema">Chryzantema</a>
+                            <a href="kwiaty.html #bez">Dziki bez</a>
+                            <a href="kwiaty.html #hiacynt">Hiacynt</a>
+                            <a href="kwiaty.html #irys">Irys</a>
+                            <a href="kwiaty.html #lawenda">Lawenda</a>
+                            <a href="ziola.html #mieta">Mięta</a>
+                            <a href="ziola.html #paproc">Paproć</a>
+                            <a href="ziola.html #pokrzywa">Pokrzywa</a>
+                            <a href="kwiaty.html #roza">Róża</a>
+                            <a href="ziola.html #rumianek">Rumianek</a>
+                            <a href="kwiaty.html #stokrotka">Stokrotka</a>
+                            <a href="ziola.html #szalwia">Szałwia</a>
+                            <a href="kwiaty.html #tulipan">Tulipan</a>
+                        </div>
+                    </form>
+
+
+                </li>
+                <li class="mapa"><a href="kwiaty.html"><img src="ikona-kwiat.png" alt="kwiaty" height="30px" width="35px"><br>Kwiaty</a>
+                <li class="mapa"><a href="ziola.html"><img src="ikona-ziola.png" alt="ziola" height="30px" width="35px"><br>Zioła</a>
+                <li class="mapa"><a href="kontakt.html"><img src="ikona-mapa.png" alt="kontakt" height="30px" width="35px"><br>Kontakt</a>
+
+                </li>
+            </ol>
+        </div>
+    </header>
+    <main class="main">
+        <abbr title="Powrót do strony głównej">
+            <a href="index.html">
+                <img src="ikona-mapa.png" class="logo" alt="logo">
+            </a>
+        </abbr>
+        <div class="bomarginniedziala"> </div>
+        <div class="katalog">
+            <p class="naglowek">~ Kontakt do twórczyni strony ~</p><br><br>
+            <p class="tresc">
+                &#9993; email@gmail.com<br><br>
+                &#9743; +48 800 900 700 <br><br><br>
+                Chętnie odpowiem na wszystkie pytania<br> oraz jestem otwarta na sugestie<br> dotyczące rozwoju strony &#9786;
+            </p>
+        </div>
+        <div class="bomarginniedziala"> </div>
+        <br>
+        <p class="komentarz">Designed and built with all the love in the world by <a href="kontakt.html">me</a></p>
+    </main>
+    <footer>
+        Copyright &copy;
+    </footer>
+</body></html>

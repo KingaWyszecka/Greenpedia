@@ -1,0 +1,307 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: monospace;
+    background-image: url(https://www.radio.bialystok.pl/src/461/5c47b986945b7a387948232df9ed3a2f);
+    background-attachment: fixed;
+    
+}
+
+.menu {
+    font-family: monospace;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0px;
+}
+
+main {
+    flex: auto;
+    margin-top: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #FFF;
+    height: 900px;
+    text-align: center;
+    min-width:500px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    border: solid 2px;
+    border-color: black;
+    padding: 2px;
+    opacity: 70%;
+}
+
+/*------------------Menu-----------------------*/
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+ol a {
+    display: block;
+    text-decoration: none;
+    padding: 0 5px;
+    color: black;
+}
+
+ol > li {
+    float: left;
+    background-color: #EEE;
+}
+
+ol > li:hover {
+    background-color: #EEE;
+}
+
+ol > li:hover > ul {
+    display: block;
+}
+
+ol > li > ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol > li > ul > li {
+    position: relative;
+    background-color: #EEE;
+}
+
+ol > li > ul > li > a {
+    border-top: 1px solid #FFF;
+}
+
+ol > li > ul > li:hover {
+    background-color: #DDD;
+}
+
+ol > li > ul > li:hover > a {
+    color: darksalmon;
+}
+
+/*----------------------------------------------*/
+.profil {
+    width: 7.5%;
+    padding-top: 7px;
+}
+
+.glowna {
+    width: 55%;
+    height: 55px;
+    padding-top: 7px;
+}
+
+.kwiaty,
+.ziola,
+.mapa {
+    width: 10%;
+    padding-top: 7px;
+
+}
+
+.logo {
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.dot {
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 10px;
+    width: 10px;
+}
+
+.dot2 {
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 4%;
+    width: 5%;
+
+}
+
+.szukaj {
+    border: none;
+    padding: 0px;
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 17px;
+    width: 85%;
+}
+
+.wyszukiwanie {
+    border-radius: 20px;
+    border: solid 2px;
+    background-color: floralwhite;
+    border-color: #CCC;
+    padding: 6px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 6px;
+    cursor: pointer;
+    text-align: left;
+    width: 85%;
+}
+
+.reset {
+    border-radius: 19px;
+    background-color: lightcoral;
+    float: right;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    color: white;
+    border: none;
+}
+
+.szukanie {
+    margin-left: 30px;
+    background-color: #EEE;
+    display: none;
+    width: 90%;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    border-bottom-left-radius:9px; 
+}
+
+.suwak_pion {
+    overflow: auto;
+    height: 100px;
+    text-align: left;
+}
+.bomarginniedziala{
+    background-color:white;
+    height:auto;
+    width:5%;
+}
+
+.katalog{
+    background-color:#FFF;
+    height:60%;
+    width:90%;
+    margin-left: 5%;   margin-right: 5%;
+    border-radius: 20px;
+}
+
+
+
+.podkatalog1{
+    float:left;
+    background-color: #FFF;
+    height: 70%;
+    width: 65%;
+    border-top-left-radius: 20px;
+    margin-right:2%;
+    margin-bottom: 2%;
+}
+
+.podkatalog2{
+    float:left;
+    background-color: #BBB;
+    height: 70%;
+    width: 33%;
+    border-top-right-radius: 20px;
+    margin-bottom: 2%;
+}
+
+.podkatalog3 > img{
+    width: 70%;
+}
+.podkatalog3{
+    float:left;
+    background-color: #EEE;
+    
+    height: 27%;
+    width: 27%;
+    border-bottom-left-radius: 20px;
+    margin-right: 2%;
+}
+
+.podkatalog4{
+    float:left;
+    background-color: #EEE;
+    height: 27%;
+    width: 71%;
+    border-bottom-right-radius: 20px;
+}
+
+.komentarz > a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.komentarz, .komentarz > a{
+    color: #AAA;
+    text-decoration: none;
+}
+
+.naglowek{
+    margin-top:5px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.ikona{
+    width:10%;
+    float:right;
+    margin: 5%;
+    margin-bottom:0px;
+}
+.tytul{
+    float:right;
+    width:60%;
+    margin-top:8%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.ramka{
+    width: 97%;
+    border-top-right-radius:20px;
+}
+
+.wiecej{
+    border-radius: 20px;
+    background-color: lightcoral;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    color: white;
+    border: none;
+    float:none;
+    height:12%;
+    width:70%;
+    font-size:24px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.zaloguj{
+    border-radius: 20px;
+    background-color: lightcoral;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    color: white;
+    border: none;
+    float:none;
+    height:50%;
+    width:80%;
+    font-size:40px;
+    font-family: monospace;
+    cursor: pointer;
+}

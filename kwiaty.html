@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl=PL">
+
+<head>
+    <title>Greenpedia</title>
+    <meta name="author" content="Kinga Wyszecka">
+    <link rel="stylesheet" href="Reset CSS.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="zbiory.css">
+    <link rel="Shortcut icon" href="ikona-strona.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $(".wyszukiwanie").click(function() {
+                $(".szukanie").slideDown("fast");
+
+            });
+        });
+        $(document).ready(function() {
+            $("main").click(function() {
+                $(".szukanie").slideUp("fast");
+
+
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <ol>
+                <li class="profil"><a href="strona_profil.html"><img src="ikona-profil.png" alt="logo" height="30px" width="30px"><br>Profil</a></li>
+                <li class="profil"><a href="strona_kolekcja.html"><img src="ikona-kolekcja.png" alt="logo" height="30px" width="30px"><br>Kolekcja</a></li>
+
+                <li class="glowna">
+                    <form action="?">
+                        <div class="wyszukiwanie">
+                            <input name="szukaj" type="text" class="szukaj" size="70px" placeholder="Lista obecnie dostępnych roślin">
+                            <input type="reset" class="reset" value=&#10006; height="20px">
+                        </div>
+                        <div class="szukanie suwak_pion">
+                            <a href="ziola.html #bazylia">Bazylia</a>
+                            <a href="kwiaty.html #bratek">Bratek</a>
+                            <a href="kwiaty.html #chryzantema">Chryzantema</a>
+                            <a href="kwiaty.html #bez">Dziki bez</a>
+                            <a href="kwiaty.html #hiacynt">Hiacynt</a>
+                            <a href="kwiaty.html #irys">Irys</a>
+                            <a href="kwiaty.html #lawenda">Lawenda</a>
+                            <a href="ziola.html #mieta">Mięta</a>
+                            <a href="ziola.html #paproc">Paproć</a>
+                            <a href="ziola.html #pokrzywa">Pokrzywa</a>
+                            <a href="kwiaty.html #roza">Róża</a>
+                            <a href="ziola.html #rumianek">Rumianek</a>
+                            <a href="kwiaty.html #stokrotka">Stokrotka</a>
+                            <a href="ziola.html #szalwia">Szałwia</a>
+                            <a href="kwiaty.html #tulipan">Tulipan</a>
+                        </div>
+                    </form>
+
+
+                </li>
+                <li class="mapa"><a href="kwiaty.html"><img src="ikona-kwiat.png" alt="kwiaty" height="30px" width="35px"><br>Kwiaty</a>
+                <li class="mapa"><a href="ziola.html"><img src="ikona-ziola.png" alt="ziola" height="30px" width="35px"><br>Zioła</a>
+                <li class="mapa"><a href="kontakt.html"><img src="ikona-mapa.png" alt="kontakt" height="30px" width="35px"><br>Kontakt</a>
+            </ol>
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <img src="ikona-kropki.png" class="dot2">
+            <img src="ikona-kropki.png" class="dot2">
+            <img src="ikona-kropki.png" class="dot2">
+            <abbr title="Powrót do strony głównej">
+                <a href="index.html">
+                    <img src="ikona-kwiat.png" height="35%" width="35%" s alt="logo">
+                </a>
+            </abbr>
+            <img src="ikona-kropki.png" class="dot2">
+            <img src="ikona-kropki.png" class="dot2">
+            <img src="ikona-kropki.png" class="dot2">
+        </div>
+        <nav class="ramki">
+            <div class="ramka">
+                <p class="naglowek" id="bez">Dziki bez</p>
+                <img src="bez.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Pół. Afryka</p><br>
+                <p class="info"><span>Pora roku:</span> maj/czerwiec</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> średnio wigotne podłoże
+                    <br>
+                    <img src="slonce.png" class="pogoda"> miejsce słoneczne lub w półcieniu
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br> Gleba: </span> próchnicza, średnio wigotna, ph 5,5-6,5
+                </p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="bratek">Bratek</p>
+                <img src="bratek.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Europa, Azja</p><br>
+                <p class="info"><span>Pora roku:</span> jesień, marzec-czerwiec</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> podlewać rano lub wieczorem
+                    <img src="slonce.png" class="pogoda"> słoneczne miejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br>Gleba:</span> kwaśne/obojętne pH</p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="chryzantema">Chryzantema</p>
+                <img src="chryzantema.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Syberia, Mongolia, Pół. Chiny, Korea</p><br>
+                <p class="info"><span>Pora roku:</span> całoroczne, na zimę przechowywać w pomieszczeniu</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> lekko wilgotne podłoże
+                    <br>
+                    <img src="slonce.png" class="pogoda"> słoneczne moiejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br>Gleba:</span> żyzna, próchniczna, przepuszczalna, zasadowe pH</p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="hiacynt">Hiacynt</p>
+                <img src="hiacynt.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Bliski Wschód</p><br>
+                <p class="info"><span>Pora roku:</span> czerwiec</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> stale lekko wilgotna gleba
+                    <br>
+                    <img src="slonce.png" class="pogoda"> miejsce słoneczne bądź w półcieniu
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br>Gleba:</span> nie kwaśna</p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="irys">Irys</p>
+                <img src="irys.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Europa, Azja Zach., Pół.-Zach. Afryka</p><br>
+                <p class="info"><span>Pora roku:</span> maj/czerwiec</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> wilgotne podłoże
+                    <br>
+                    <img src="slonce.png" class="pogoda"> miejsce w półcieniu
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br> Gleba:</span> żyzna, lekko kwaśne pH</p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="lawenda">Lawenda</p>
+                <img src="lawenda.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> basen Morza Śródziemnego</p><br>
+                <p class="info"><span>Pora roku:</span> sadzić: kwiecień, odpowiednio zabezpieczone przed mrozem mogę przetrwać zimę</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> regularnie, często, mało
+                    <br>
+                    <img src="slonce.png" class="pogoda"> słoneczne miejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br>Gleba: </span> lekka, zasadowe pH</p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="roza">Róża</p>
+                <img src="roza.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> szklarnie, ogrody</p><br>
+                <p class="info"><span>Pora roku:</span> marzec-kwiecień, wrzesień-październik</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> rzadko i intensywnie
+                    <br>
+                    <img src="slonce.png" class="pogoda"> słoneczne i przewiewne miejsce
+                </div>
+                <br>
+                <p class="info"><span>Dodatkowe wymagania:<br>Gleba:</span> żyzna, lekka i przepuszczalna pH 0-6,5<br><span>Nawożenie:</span> intensywnego i regularnego</p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="stokrotka">Stokrotka</p>
+                <img src="stokrotka.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Europa, Azja Zach.</p><br>
+                <p class="info"><span>Pora roku:</span> od kwietnia do pierwszych mrozów</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> regularnie, intensywność zależnie od nasłonecznienia
+                    <br>
+                    <img src="slonce.png" class="pogoda"> słoneczne miejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br>Gleba:</span> żyzna, przepuszczalna, obojętne pH<br><span>Nawożenie:</span> 2-3 razy na sezon, najlepiej pierwszy raz na początku wiosny</p>
+            </div>
+            <div class="ramka">
+                <p class="naglowek" id="tulipan">Tulipan</p>
+                <img src="tulip.png" class="ramkazdjecia">
+                <hr>
+                <p class="info"><span>Występowanie:</span> Europa Płd., Pół. Afryka, Azja</p><br>
+                <p class="info"><span>Pora roku:</span> sadzenie: wrzesień, kwitną: lato</p><br>
+                <div class="info">
+                    <img src="kropla.png" class="pogoda"> umiarkowane, nieprzelać
+                    <br>
+                    <img src="slonce.png" class="pogoda"> słoneczne miejsce
+                </div><br>
+                <p class="info"><span>Dodatkowe wymagania:<br>Gleba:</span> przepuszczalna, bogata w składniki pokarmowe, niezbyt kwaśna</p>
+            </div>
+        </nav>
+        <p class="komentarz">Designed and built with all the love in the world by <a href="kontakt.html">me</a></p>
+    </main>
+    <footer>
+        Copyright &copy;
+    </footer>
+</body>
+
+</html>

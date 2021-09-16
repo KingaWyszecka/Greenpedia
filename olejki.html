@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Greenpedia</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Kinga Wyszecka">
+    <link rel="stylesheet" href="Reset CSS.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="profil.css">
+    <link rel="Shortcut icon" href="ikona-strona.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("main").hover(function() {
+                $(".logo").animate({
+                    height: '35%',
+                    width: '35%',
+
+                });
+                $(".dot").animate({
+                    height: '4%',
+                    width: '5%',
+
+                });
+
+            });
+        });
+
+        $(document).ready(function() {
+            $(".wyszukiwanie").click(function() {
+                $(".szukanie").slideDown("fast");
+
+            });
+        });
+        $(document).ready(function() {
+            $("main").click(function() {
+                $(".szukanie").slideUp("fast");
+
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <ol>
+                <li class="profil"><a href="strona_profil.html"><img src="ikona-profil.png" alt="logo" height="30px" width="30px"><br>Profil</a></li>
+                <li class="profil"><a href="strona_kolekcja.html"><img src="ikona-kolekcja.png" alt="logo" height="30px" width="30px"><br>Kolekcja</a></li>
+
+                <li class="glowna">
+                    <form action="?">
+                        <div class="wyszukiwanie">
+                            <input name="szukaj" class="szukaj" size="70px" placeholder="Lista obecnie dostępnych roślin">
+                            <input type="reset" class="reset" value=&#10006; height="20px">
+                        </div>
+                        <div class="szukanie suwak_pion">
+                            <a href="ziola.html #bazylia">Bazylia</a>
+                            <a href="kwiaty.html #bratek">Bratek</a>
+                            <a href="kwiaty.html #chryzantema">Chryzantema</a>
+                            <a href="kwiaty.html #bez">Dziki bez</a>
+                            <a href="kwiaty.html #hiacynt">Hiacynt</a>
+                            <a href="kwiaty.html #irys">Irys</a>
+                            <a href="kwiaty.html #lawenda">Lawenda</a>
+                            <a href="ziola.html #mieta">Mięta</a>
+                            <a href="ziola.html #paproc">Paproć</a>
+                            <a href="ziola.html #pokrzywa">Pokrzywa</a>
+                            <a href="kwiaty.html #roza">Róża</a>
+                            <a href="ziola.html #rumianek">Rumianek</a>
+                            <a href="kwiaty.html #stokrotka">Stokrotka</a>
+                            <a href="ziola.html #szalwia">Szałwia</a>
+                            <a href="kwiaty.html #tulipan">Tulipan</a>
+                        </div>
+                    </form>
+
+
+                </li>
+                <li class="mapa"><a href="kwiaty.html"><img src="ikona-kwiat.png" alt="kwiaty" height="30px" width="35px"><br>Kwiaty</a>
+                <li class="mapa"><a href="ziola.html"><img src="ikona-ziola.png" alt="ziola" height="30px" width="35px"><br>Zioła</a>
+                <li class="mapa"><a href="kontakt.html"><img src="ikona-mapa.png" alt="kontakt" height="30px" width="35px"><br>Kontakt</a>
+            </ol>
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <abbr title="Powrót do strony głównej">
+                <a href="index.html">
+                    <img src="ikona-strona.png" class="ikona" alt="logo">
+                </a>
+            </abbr>
+            <p class="tytul">Olejki eteryczne</p>
+            <abbr title="Powrót do strony głównej">
+                <a href="index.html">
+                    <img src="ikona-strona.png" class="ikona" alt="logo">
+                </a>
+            </abbr>
+
+        </div>
+        <div>
+            <article>
+                <span>Czym są?</span><br><br>
+                Olejek eteryczny pozyskuje się w różne sposoby, jest to uzależnione od jego dalszego zastosowania. Najczęściej otrzymuje się je z suszonych bądź świeżych roślin metodą destylacji z parą wodną. W przypadku owoców cytrusowych olejki pozyskuje się poprzez wyciskanie ich soków.<br><br>Olejki eteryczne można bezpiecznie stosować na trzy sposoby:<br> poprzez stosowanie miejscowo na skórę (w maściach, kremach, żelach), wdychanie (inhalacja z zastosowaniem inhalatora) oraz w ramach aromaterapii.
+            </article>
+            <article><span>Aromaterapia</span> czyli terapia olejkami eterycznymi odnosi się do szeregu terapii, które wykorzystują olejki eteryczne i inne aromatyczne związki roślinne.
+            </article>
+            <article class="left">
+                <span>Działanie olejków:</span><br><br>
+                Antyseptyczne (działają na bakterie odporne na niektóre antybiotyki)<br>
+                Przykładowe olejki: goździkowy, cynamonowy, tymiankowy, cząbrowy, oregano.<br><br>
+                Wykrztuśne (wzmożenie wydzielania zalegającego śluzu w błonie śluzowej)<br>
+                Przykładowe olejki: eukaliptusowy, sosnowy, tymiankowy, jodłowy, anyżowy.<br><br>
+                Spazmolityczne (rozluźnienie mięśni przewodu pokarmowego)<br>
+                Przykładowe olejki: lawendowy, miętowy, koprowy, kminkowy, melisowy.<br><br>
+                Diuretyczne (zwiększenie oddawania moczu)<br>
+                Przykładowe olejki: jałowcowy, z korzenia lubczyku.<br><br><br>s
+            </article>
+        </div>
+        <p class="komentarz">Designed and built with all the love in the world by <a href="kontakt.html">me</a></p>
+    </main>
+    <footer>
+        Copyright &copy;
+    </footer>
+</body></html>
